@@ -1,0 +1,255 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+    text-decoration:none;	
+}
+/*freeNews开始*/
+.freeNews{
+	width:100%;
+	height:auto;
+	background:url(../img/1.jpg) ;
+	background-size:cover;
+}
+.freemark{
+	width:100%;
+	height:auto;
+	background:url(../img/overlay.png) ;
+	background-color:rgba(0,0,0,0.7);	
+	padding-top:80px;	
+	padding-bottom:80px;	
+}
+.freemark>main{
+	height:auto;	
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.freeNewsNav{
+	width:80%;
+	height:70%;
+}
+.freeNewsNav>p:first-child{
+	width:100%;
+	font-size:40px;
+	font-family: helvetica;
+	color:#fff;
+	font-weight: 100;
+	text-align:center;
+	margin-bottom:38px;
+}
+.freeNewsNav>p:nth-child(2){
+	width:100%;
+	font-size:16px;
+	font-family: helvetica;
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+	margin-bottom:28px;
+}
+.freeNewsNav .email{
+	width:48%;
+	height:45px;
+	border:none;
+	outline:none;
+	padding-left:16px;
+	margin-right:10px;
+	margin-left:16%;
+}
+::-webkit-input-placeholder{
+	color:#A9A9A9;
+	font-size:12px;
+	letter-spacing:2px;
+	font-weight: bold;
+}
+.freeNewsNav .sub{
+	width:16.8%;
+	height:43px;
+	border:none;
+	background:#F44336;
+	border:1px solid #F44336;
+	text-align:center;
+	line-height:43px;
+	font-size:16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: helvetica;
+	color:#fff;
+	cursor:pointer;
+}
+.freeNewsNav .sub:hover{
+	transition:all .5s ease;
+	border:1px solid #fff;
+	background:transparent;		
+}
+.freeFooter{
+	width:100%;
+	font-size:16px;
+	font-family: helvetica;
+	color:#fff;
+	text-align:center;
+	margin-top:16px;
+}
+@media screen and (max-width:744px){
+	.freemark{
+		width: 100%;
+		padding-top:60px;	
+		padding-bottom:60px;	
+	}
+	.freemark>main{
+		width: 100%;
+	}	
+	.freeNewsNav{
+		width:80%;
+		height:70%;
+	}
+	.freeNewsNav>p:first-child{
+		font-size:24px;
+	}
+	.freeNewsNav .sub{
+		font-size:12px;	
+	}	
+	.freeNewsNav .email{
+		margin-left:10%;
+	}
+}
+/*freeNews结束*/
+
+/*footerdh开始*/
+.footerdh{
+	width:100%;
+	height:auto;
+	background:#1A1A1A;
+	overflow: hidden;
+}
+.footerdhN{
+	width:100%;
+	height:auto;
+	padding-top:54px;
+	box-sizing:border-box;
+}
+.footerdhN>li{
+	width:25%;
+	/*height:340px;*/
+	/*background:#dfdfdf;*/
+	float:left;
+	box-sizing:border-box;
+	margin-bottom:54px;
+}
+.fdhlogo{
+	width:152px;
+	height:54px;
+	border:6px outset #FFFFFF;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	text-align:center;
+	line-height:42px;
+	margin-bottom:28px;
+	letter-spacing: 2px;
+}
+.fdhlogo>a{
+	font-size:16px;
+	font-family: helvetica;
+	color:#fff;
+}
+.footerdhN>li:first-child{
+	padding-right:40px;
+}
+.footerdhN>li:first-child>p{
+	font-size:10px;
+	color:#999999;
+	font-family: helvetica;
+	letter-spacing: 1px;
+	line-height:24px;
+}
+.footerdhN>li:nth-child(2) a:hover{
+	transition:all 1s ease;
+	color:#F44336;
+}
+.footerdhN>li>h1{
+	font-size:24px;
+	font-family: helvetica;
+	font-weight: 100;
+   color:#6495ED;	
+   margin-bottom:10px;
+}
+.fdhul>li{
+	padding-top:12px;
+	font-size:10px;
+	color:#999;
+	font-family: helvetica;
+	letter-spacing: 1px;
+}
+.fdhul a{
+	font-size:10px;
+	color:#999;
+	font-family: helvetica;
+	letter-spacing: 1px;
+}
+.footerdhN>li:last-child a{
+	color:#6495ED;
+}
+.footerdhN>li:last-child a:hover{
+	color:#F44336;
+}
+@media screen and (max-width:992px){
+	.footerdh>main{
+		width:100%;
+	}
+	.footerdhN{
+		width:100%;
+		height:auto;
+		padding-top:54px;
+		padding-bottom:54px;
+		padding-left:30px;
+		box-sizing:border-box;
+	}	
+   .footerdhN>li{
+   	width:50%;
+   }	
+}
+@media screen and (max-width:772px){
+	.footerdh>main{
+		width:100%;
+	}
+	.footerdhN{
+		width:100%;
+		height:auto;
+		padding-top:54px;
+		padding-bottom:54px;
+		padding-left:30px;
+		box-sizing:border-box;
+	}	
+   .footerdhN>li{
+   	width:100%;
+   }	
+}
+/*footerdh结束*/
+
+/*footer开始*/
+footer{
+	width:100%;
+	height:80px;
+	background:#121212;
+	font-size: 14px;
+    text-align:center;
+    line-height:80px;
+    color:#fff;
+    font-family: helvetica;
+    letter-spacing: 1px;
+}
+/*footer结束*/
+/*固定定位开始*/
+.fixed{
+	position:fixed;
+	bottom:28px;
+	right:35px;
+	z-index:100;
+	display:none;
+}
+.fixed>.icon-arrow-circle-top{
+	font-size:40px;
+	color:#F44336;
+}
+/*固定定位结束*/

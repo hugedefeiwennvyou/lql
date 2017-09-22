@@ -1,0 +1,57 @@
+/*about中的learnmore*/
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.amoreBox{
+	width:1366px;
+	height:auto;
+	background:rgba(0, 0, 0, 0.48);
+	overflow-x: hidden;
+    overflow-y: auto;
+    display:none;
+}
+.amoreBox>main{
+	width:1142px;
+	height:auto;
+	margin:0 auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.amore{
+	width:600px;
+	height:700px;
+	background:#fff;
+	border-radius:6px;
+	margin-top:30px;
+	position:relative;
+}
+.amoreImg{
+	width:544px;
+	height:364px;
+	margin: 0 auto;
+	margin-top:46px;
+}
+.amoreImg img{
+	width:544px;
+	height:364px;				
+}
+.amoreBox p{
+    width:544px;
+	height:auto;
+	margin: 0 auto;
+	margin-top:18px;
+}
+.icon-close{
+	color:#F44336;
+	font-size: 30px;
+	position:absolute;
+	right:30px;
+	top:10px;
+}

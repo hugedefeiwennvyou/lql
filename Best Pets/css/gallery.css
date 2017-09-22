@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.gallery>main{
+	width:1142px;
+	height:auto;
+}
+.gallery{
+	width:100%;
+	height:auto;
+	/*overflow: hidden;*/
+	padding:50px 0;
+}
+.galleryTop{
+	font-size:40px;
+	color:#F44336;
+	font-family:helvetica;
+	text-align:center;
+	font-weight:200;
+}
+.galleryNav{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin-bottom:30px;
+}
+.galleryul{
+	width:100%;
+	height:auto;
+	float:left;
+	display:flex;
+	justify-content:space-between;
+	margin-top:28px;
+}
+.galleryul>li{
+	width:32%;
+	position:relative;	
+}
+.galleryul img{
+	width:100%;
+}
+.galleryul a{
+	display:block;
+	perspective:800px;
+}
+.gallerydiv{
+	width:92%;
+	height:92%;
+	margin-top:34px;
+	box-sizing:border-box;
+	background:rgba(0,0,0,0.72);
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	transform-style:preserve-3d;
+	transform:rotateX(90deg);
+}
+.gallerydiv>P:first-child{
+	width:100%;
+	text-align:center;
+	font-size:24px;
+	font-weight:100;
+	color:#6495ed;
+	font-family:helvetica;
+	margin-top:12%;
+	margin-bottom:6%;
+}
+.gallerydiv>P:nth-child(2){
+	width:67%;
+	height:1px;
+	background:#6495ed;
+	margin: 0 auto;
+	margin-bottom:6%;	
+}
+.gallerydiv>P:last-child{
+	width:65%;
+	margin: 0 auto;	
+	text-align:center;
+	font-size:14px;
+	font-weight:100;
+	color:#fff;
+	font-family:helvetica;
+    line-height:28px;
+    letter-spacing:1px;
+}
+.galleryul>li:hover .gallerydiv{
+	transform:rotateX(0deg);	
+	transition:all 0.3s ease;
+}
+@media screen and (max-width:1150px){
+	.gallery>main{
+		width:96%;
+		height:auto;
+	}
+	.galleryTop{
+		width:100%;
+		font-size:36px;
+		text-align:center;
+	}
+}
+@media screen and (max-width:800px){
+	.gallery>main{
+		width:96%;
+		height:auto;
+	}
+	.galleryTop{
+		width:100%;
+		font-size:36px;
+		text-align:center;
+	}	
+	.galleryTop{
+		font-size:24px;
+	}	
+	.gallerydiv>P:first-child{
+		font-size:16px;
+	}
+	.gallerydiv>P:last-child{
+		font-size:10px;
+	}	
+}
+@media screen and (max-width:550px){
+	.gallery>main{
+		width:94%;
+		height:auto;
+	}
+	.galleryTop{
+		margin-top:30px;
+		width:100%;
+		font-size:30px;
+		text-align:center;
+	}
+    .galleryul{
+    	width:100%;
+    	height:auto;
+    	display: block;
+    }	
+    .galleryul>li{
+    	width:100%;
+    	margin-bottom:20px;
+    }
+    .galleryul>img{
+    	width:100%;
+    }  
+    .gallerydiv>P:last-child{	
+       letter-spacing:2px;
+    }   
+}
