@@ -166,7 +166,7 @@ main{
 	height:50px;
 	background:rgba(196,0,0,0.9);
 	position:fixed;
-	top:0;
+	top:-50px;
 	left:0;
 	z-index:999999;
 	font-size:20px;
@@ -175,7 +175,7 @@ main{
 	padding-left:60px;
 	box-sizing:border-box;
 	line-height:50px;
-	display: none;
+	/*display: none;*/
 }
 .fixSearch>span:nth-of-type(1){
 	float:left;
@@ -471,28 +471,48 @@ main{
 	top:32px;
 	right:0px;
 	z-index: 70; 
-	/*display: none;*/
+	display: none;
 }
-.webnavN{
-	width:260px;
+#webnavN{
+	width:auto;
 	height:200px;
-	background:red;
+	/*background:red;*/
 	float:left;
 	border-right:2px solid #F6F6F6;
-	padding-left:30px;
-	padding-right:30px;	
+	padding-left:31px;
+	padding-right:31px;	
+	text-align: left;
+	margin-top:25px;
+}
+#webnavN:last-child{
+	border-right:0px solid #F6F6F6;	
+}
+#webnavN>h1{
+	font-size:15px;
+	font-family: "微软雅黑";
+	font-style: normal;
 }
 .webnavul{
-	width:50px;
-	height:100%;
-	background:green;
+	width:60px;
+	height:auto;
+	/*background:green;*/
 	float:left;
-	margin-right:40px;
+	margin-right:35px;
 	font-size:10px;
-	font-family:"微软雅黑"
+	font-family: "微软雅黑";
+}
+.webnavul>li{
+	width:60px;
+	height:auto;
+	/*background: yellow;*/	
+	padding-left:0;
+	padding-right:0;	
 }
 .webnavul:last-child{
 	margin-right:0;
+}
+.webnavul>li>a:hover{
+	text-decoration: underline;
 }
 /*顶部导航结束site-nav*/
 /*header开始*/
@@ -675,11 +695,18 @@ nav{
 	width: auto;
 	height: 100%;
 	margin:0 auto;
-   display:block;
+    display:block;
    
+}
+.banner>li{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:20;
 }
 .banner>li:first-child{
 	background:#E8E8E8;
+	z-index:21;
 }
 .banner>li:nth-child(2){
 	background:#0243F3;
@@ -696,13 +723,6 @@ nav{
 .banner>li:nth-child(6){
 	background:#CFC4C0;
 }
-.banner>li{
-	position:absolute;
-	/*top:0;*/
-	left:0;
-	z-index:20;
-	/*display: none;*/
-}
 aside{
 	width: 200px;
 	height: 100%;
@@ -712,13 +732,13 @@ aside{
 	left:60px;
 	z-index:60;	
 }
-aside li{
+.asideul>li{
 	font-size: 14px;
 	padding-top: 8px;
 	padding-bottom:6px;
 	/*background: red;*/
 }
-aside li a{
+.asideul>li>.asideA1{
 	color: #000;
 	padding-left:38px;
 }
@@ -731,19 +751,19 @@ aside li .iconfont4{
 	float:left;
 	padding-left: 14px;
 }
-aside li:hover{
+.asideul>li:hover{
 	background: #fff;
 }
-aside li:hover a,.iconfont4{
+.asideul>li:hover .asideA1,.iconfont4{
 	color:#c60a0a;
 }
-aside li:nth-child(2n):hover a,.iconfont4{
+.asideul>li:nth-child(2n):hover .asideA1,.iconfont4{
 	color:#0a44c6;
 }
-aside li:nth-child(3):hover a,.iconfont4{
+.asideul>li:nth-child(3):hover .asideA1,.iconfont4{
 	color:#00f6ff;
 }
-aside li:nth-child(7):hover a,.iconfont4{
+.asideul>li:nth-child(7):hover .asideA1,.iconfont4{
 	color:#ff9600;
 }
 /*lunbo*/
@@ -770,6 +790,7 @@ aside li:nth-child(7):hover a,.iconfont4{
 	padding-bottom: 0;
 	border-radius:50%;
 	box-sizing: border-box;
+	cursor:pointer;
 }
 #lunbo li:last-child{
 	margin-right:0;

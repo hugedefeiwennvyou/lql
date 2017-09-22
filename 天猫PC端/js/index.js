@@ -2,7 +2,7 @@ window.onload=function(){
 	//对banner的轮播图进行设置
 	let banner=document.getElementsByClassName('banner')[0];
 	let bannerlis=banner.querySelectorAll('.banner>li');
-	let b=setInterval(move,3000);
+	let b=setInterval(move,5000);
 	let bnum=0;
 	function move(){
 		bnum++;
@@ -110,13 +110,13 @@ window.onload=function(){
     
     
     //5.对网站导航进行设置
-//	let  webnav=document.getElementsByClassName('webnav')[0];
-//  srullis[9].onmouseenter=function(){
-//  	webnav.style.display='block';
-//  }
-//  srullis[9].onmouseleave=function(){
-//  	webnav.style.display='none';
-//  }     
+	let  webnav=document.getElementsByClassName('webnav')[0];
+    srullis[9].onmouseenter=function(){
+    	webnav.style.display='block';
+    }
+    srullis[9].onmouseleave=function(){
+    	webnav.style.display='none';
+    }     
     
     
 //对aside进行设置

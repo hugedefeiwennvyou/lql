@@ -18,7 +18,7 @@ window.addEventListener('load',function(){
       let cw=document.body.scrollTop;
       let heights=sw+cw;
       let a=0;
-      console.log(cw)
+//    console.log(cw)
       //左边固定栏点击事件
       let b=0;
       for(let j=0;j<newarr.length;j++){
